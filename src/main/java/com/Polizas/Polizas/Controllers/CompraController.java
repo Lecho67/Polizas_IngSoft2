@@ -43,45 +43,48 @@ public class CompraController {
         // Obtener la poliza y el usuario del cuerpo de la petición
         Long polizaId = request.getPoliza().getId();
         Long usuarioId = request.getUsuario().getId();
+        boolean existsRedis = redisService.exists(usuarioId);
 
-        // Verificar si existe un registro en Redis para el usuario
-        Transaccion transaccionRedis = redisService.getTransaccion(usuarioId);
-        if (transaccionRedis != null) {
-            // Si existe una transacción en Redis, guardarla en la base de datos
-            Transaccion savedTransaccion = transaccionRepository.save(transaccionRedis);
+        if(!existsRedis) return ResponseEntity.badRequest().build();
+            // Verificar si existe un registro en Redis para el usuario
+            Transaccion transaccionRedis = redisService.getTransaccion(usuarioId);
 
-            // Crear la compra con la transacción guardada
-            Optional<Poliza> optionalPoliza = polizaRepository.findById(polizaId);
-            Optional<Usuario> optionalUsuario = usuarioRepository.findById(usuarioId);
+            if (transaccionRedis != null) {
+                // Si existe una transacción en Redis, guardarla en la base de datos
+                Transaccion savedTransaccion = transaccionRepository.save(transaccionRedis);
 
-            if (optionalPoliza.isPresent() && optionalUsuario.isPresent()) {
-                Poliza poliza = optionalPoliza.get();
-                Usuario usuario = optionalUsuario.get();
+                // Crear la compra con la transacción guardada
+                Optional<Poliza> optionalPoliza = polizaRepository.findById(polizaId);
+                Optional<Usuario> optionalUsuario = usuarioRepository.findById(usuarioId);
 
-                CompraPoliza compraPoliza = new CompraPoliza();
-                compraPoliza.setFormaDePago(request.getFormaDePago());
-                compraPoliza.setPoliza(poliza);
-                compraPoliza.setUsuario(usuario);
-                compraPoliza.setTransaccion(savedTransaccion);
+                if (optionalPoliza.isPresent() && optionalUsuario.isPresent()) {
+                    Poliza poliza = optionalPoliza.get();
+                    Usuario usuario = optionalUsuario.get();
 
-                CompraPoliza savedCompraPoliza = compraPolizaRepository.save(compraPoliza);
-                return ResponseEntity.status(HttpStatus.CREATED).body(savedCompraPoliza);
+                    CompraPoliza compraPoliza = new CompraPoliza();
+                    compraPoliza.setFormaDePago(request.getFormaDePago());
+                    compraPoliza.setPoliza(poliza);
+                    compraPoliza.setUsuario(usuario);
+                    compraPoliza.setTransaccion(savedTransaccion);
+
+                    CompraPoliza savedCompraPoliza = compraPolizaRepository.save(compraPoliza);
+                    return ResponseEntity.status(HttpStatus.CREATED).body(savedCompraPoliza);
+                } else {
+                    return ResponseEntity.notFound().build();
+                }
             } else {
-                return ResponseEntity.notFound().build();
+                // Si no hay una transacción en Redis, retornar un error
+                return ResponseEntity.badRequest().build();
+
             }
-        } else {
-            // Si no hay una transacción en Redis, retornar un error
-            return ResponseEntity.badRequest().build();
-
         }
-    }
 
 
-    // 4.Recurso: Detalles de Póliza por Usuario
-    @GetMapping("/api/poliza/{id}")
+        // 4.Recurso: Detalles de Póliza por Usuario
+        @GetMapping("/api/poliza/{id}")
 
-    public List<Poliza> findPolizaByUserId(@PathVariable("id") Long id){
-        return compraPolizaRepository.findPolizaByUserId(id);
-    }
+        public List<Poliza> findPolizaByUserId(@PathVariable("id") Long id){
+            return compraPolizaRepository.findPolizaByUserId(id);
+        }
 
 }

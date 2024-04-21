@@ -24,6 +24,9 @@ public class RedisService {
         jedis.select(database);
 
     }
+    public boolean exists(Long id){
+        return jedis.exists(String.valueOf(id));
+    }
 
 //    public void save(Long id, double valor) {
 //        LocalDateTime localDateTime = LocalDateTime.now();
