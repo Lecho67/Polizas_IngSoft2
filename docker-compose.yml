@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+    polizas:
+      container_name: polizas
+      image: polizas
+      build: .
+      ports:
+        - "8080:8080"
+      environment:
+        - POSTGRES_URL=jdbc:postgresql://flora.db.elephantsql.com:5432/jycxjyfn
+        - POSTGRES_USERNAME=jycxjyfn
+        - POSTGRES_PASSWORD=xHWwVPGDjlsIrsDczD1u3ZTjUZtjECZ4
