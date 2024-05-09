@@ -1,16 +1,16 @@
-C:\Users\jpc4s\OneDrive\Escritorio\La Carpeta de Kipi\Comunes\Trabajos\Ing de software 2\Polizas_IngSoft2\src\main\java\com\Polizas\Polizas\Persistence\Entities\CompraPoliza.java
-C:\Users\jpc4s\OneDrive\Escritorio\La Carpeta de Kipi\Comunes\Trabajos\Ing de software 2\Polizas_IngSoft2\src\main\java\com\Polizas\Polizas\Persistence\Entities\Poliza.java
-C:\Users\jpc4s\OneDrive\Escritorio\La Carpeta de Kipi\Comunes\Trabajos\Ing de software 2\Polizas_IngSoft2\src\main\java\com\Polizas\Polizas\Persistence\Repositories\PolizaRepository.java
-C:\Users\jpc4s\OneDrive\Escritorio\La Carpeta de Kipi\Comunes\Trabajos\Ing de software 2\Polizas_IngSoft2\src\main\java\com\Polizas\Polizas\Controllers\PolizaController.java
-C:\Users\jpc4s\OneDrive\Escritorio\La Carpeta de Kipi\Comunes\Trabajos\Ing de software 2\Polizas_IngSoft2\src\main\java\com\Polizas\Polizas\Persistence\Entities\Transaccion.java
-C:\Users\jpc4s\OneDrive\Escritorio\La Carpeta de Kipi\Comunes\Trabajos\Ing de software 2\Polizas_IngSoft2\src\main\java\com\Polizas\Polizas\Persistence\Repositories\UsuarioRepository.java
-C:\Users\jpc4s\OneDrive\Escritorio\La Carpeta de Kipi\Comunes\Trabajos\Ing de software 2\Polizas_IngSoft2\src\main\java\com\Polizas\Polizas\Services\CurrencyExchangeService.java
-C:\Users\jpc4s\OneDrive\Escritorio\La Carpeta de Kipi\Comunes\Trabajos\Ing de software 2\Polizas_IngSoft2\src\main\java\com\Polizas\Polizas\Persistence\Repositories\CompraPolizaRepository.java
-C:\Users\jpc4s\OneDrive\Escritorio\La Carpeta de Kipi\Comunes\Trabajos\Ing de software 2\Polizas_IngSoft2\src\main\java\com\Polizas\Polizas\Config\RedisConfig.java
-C:\Users\jpc4s\OneDrive\Escritorio\La Carpeta de Kipi\Comunes\Trabajos\Ing de software 2\Polizas_IngSoft2\src\main\java\com\Polizas\Polizas\Controllers\CompraController.java
-C:\Users\jpc4s\OneDrive\Escritorio\La Carpeta de Kipi\Comunes\Trabajos\Ing de software 2\Polizas_IngSoft2\src\main\java\com\Polizas\Polizas\Controllers\UsuarioController.java
-C:\Users\jpc4s\OneDrive\Escritorio\La Carpeta de Kipi\Comunes\Trabajos\Ing de software 2\Polizas_IngSoft2\src\main\java\com\Polizas\Polizas\Persistence\Entities\Usuario.java
-C:\Users\jpc4s\OneDrive\Escritorio\La Carpeta de Kipi\Comunes\Trabajos\Ing de software 2\Polizas_IngSoft2\src\main\java\com\Polizas\Polizas\Controllers\TransaccionController.java
-C:\Users\jpc4s\OneDrive\Escritorio\La Carpeta de Kipi\Comunes\Trabajos\Ing de software 2\Polizas_IngSoft2\src\main\java\com\Polizas\Polizas\Persistence\Repositories\TransaccionRepository.java
-C:\Users\jpc4s\OneDrive\Escritorio\La Carpeta de Kipi\Comunes\Trabajos\Ing de software 2\Polizas_IngSoft2\src\main\java\com\Polizas\Polizas\Services\RedisService.java
-C:\Users\jpc4s\OneDrive\Escritorio\La Carpeta de Kipi\Comunes\Trabajos\Ing de software 2\Polizas_IngSoft2\src\main\java\com\Polizas\Polizas\PolizasApplication.java
+C:\Users\simon\OneDrive\Documents\Polizas_IngSoft2\src\main\java\com\Polizas\Polizas\Config\RedisConfig.java
+C:\Users\simon\OneDrive\Documents\Polizas_IngSoft2\src\main\java\com\Polizas\Polizas\Persistence\Repositories\CompraPolizaRepository.java
+C:\Users\simon\OneDrive\Documents\Polizas_IngSoft2\src\main\java\com\Polizas\Polizas\Persistence\Entities\CompraPoliza.java
+C:\Users\simon\OneDrive\Documents\Polizas_IngSoft2\src\main\java\com\Polizas\Polizas\Persistence\Entities\Transaccion.java
+C:\Users\simon\OneDrive\Documents\Polizas_IngSoft2\src\main\java\com\Polizas\Polizas\PolizasApplication.java
+C:\Users\simon\OneDrive\Documents\Polizas_IngSoft2\src\main\java\com\Polizas\Polizas\Services\CurrencyExchangeService.java
+C:\Users\simon\OneDrive\Documents\Polizas_IngSoft2\src\main\java\com\Polizas\Polizas\Controllers\UsuarioController.java
+C:\Users\simon\OneDrive\Documents\Polizas_IngSoft2\src\main\java\com\Polizas\Polizas\Services\RedisService.java
+C:\Users\simon\OneDrive\Documents\Polizas_IngSoft2\src\main\java\com\Polizas\Polizas\Persistence\Repositories\UsuarioRepository.java
+C:\Users\simon\OneDrive\Documents\Polizas_IngSoft2\src\main\java\com\Polizas\Polizas\Controllers\CompraController.java
+C:\Users\simon\OneDrive\Documents\Polizas_IngSoft2\src\main\java\com\Polizas\Polizas\Persistence\Entities\Usuario.java
+C:\Users\simon\OneDrive\Documents\Polizas_IngSoft2\src\main\java\com\Polizas\Polizas\Controllers\TransaccionController.java
+C:\Users\simon\OneDrive\Documents\Polizas_IngSoft2\src\main\java\com\Polizas\Polizas\Persistence\Entities\Poliza.java
+C:\Users\simon\OneDrive\Documents\Polizas_IngSoft2\src\main\java\com\Polizas\Polizas\Persistence\Repositories\TransaccionRepository.java
+C:\Users\simon\OneDrive\Documents\Polizas_IngSoft2\src\main\java\com\Polizas\Polizas\Controllers\PolizaController.java
+C:\Users\simon\OneDrive\Documents\Polizas_IngSoft2\src\main\java\com\Polizas\Polizas\Persistence\Repositories\PolizaRepository.java
