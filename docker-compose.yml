@@ -5,7 +5,7 @@ services:
       image: polizas
       build: .
       ports:
-        - "8080:8080"
+        - "8081:8081"
       environment:
         - POSTGRES_URL=jdbc:postgresql://flora.db.elephantsql.com:5432/jycxjyfn
         - POSTGRES_USERNAME=jycxjyfn
