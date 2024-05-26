@@ -1,7 +1,7 @@
 package com.Polizas.Polizas.Infraestructura.Input.Rest;
 
-import com.Polizas.Polizas.Dominio.Poliza;
-import com.Polizas.Polizas.Aplicación.Repositories.PolizaRepository;
+import com.Polizas.Polizas.Dominio.Models.Poliza;
+import com.Polizas.Polizas.Dominio.Repositories.PolizaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

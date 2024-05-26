@@ -1,4 +1,4 @@
-package com.Polizas.Polizas.Aplicación.Services;
+package com.Polizas.Polizas.Infraestructura.Services;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import com.Polizas.Polizas.Dominio.Transaccion;
+import com.Polizas.Polizas.Dominio.Models.Transaccion;
 import org.json.JSONObject;
 import org.springframework.stereotype.Service;
 

@@ -1,8 +1,8 @@
 package com.Polizas.Polizas.Infraestructura.Input.Rest;
 
 
-import com.Polizas.Polizas.Dominio.Usuario;
-import com.Polizas.Polizas.Aplicación.Repositories.UsuarioRepository;
+import com.Polizas.Polizas.Dominio.Models.Usuario;
+import com.Polizas.Polizas.Dominio.Repositories.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

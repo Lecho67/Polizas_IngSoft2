@@ -1,14 +1,14 @@
 package com.Polizas.Polizas.Infraestructura.Input.Rest;
 
-import com.Polizas.Polizas.Dominio.CompraPoliza;
-import com.Polizas.Polizas.Dominio.Poliza;
-import com.Polizas.Polizas.Dominio.Transaccion;
-import com.Polizas.Polizas.Dominio.Usuario;
-import com.Polizas.Polizas.Aplicación.Repositories.CompraPolizaRepository;
-import com.Polizas.Polizas.Aplicación.Repositories.PolizaRepository;
-import com.Polizas.Polizas.Aplicación.Repositories.TransaccionRepository;
-import com.Polizas.Polizas.Aplicación.Repositories.UsuarioRepository;
-import com.Polizas.Polizas.Aplicación.Services.RedisService;
+import com.Polizas.Polizas.Dominio.Models.CompraPoliza;
+import com.Polizas.Polizas.Dominio.Models.Poliza;
+import com.Polizas.Polizas.Dominio.Models.Transaccion;
+import com.Polizas.Polizas.Dominio.Models.Usuario;
+import com.Polizas.Polizas.Dominio.Repositories.CompraPolizaRepository;
+import com.Polizas.Polizas.Dominio.Repositories.PolizaRepository;
+import com.Polizas.Polizas.Dominio.Repositories.TransaccionRepository;
+import com.Polizas.Polizas.Dominio.Repositories.UsuarioRepository;
+import com.Polizas.Polizas.Infraestructura.Services.RedisService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -104,7 +104,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>com.Polizas.Polizas.PolizasApplication</mainClass>
+							<mainClass>com.Polizas.Polizas.Aplicación.PolizasApplication</mainClass>
 						</manifest>
 					</archive>
 				</configuration>

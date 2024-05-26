@@ -1,4 +1,4 @@
-package com.Polizas.Polizas.Dominio;
+package com.Polizas.Polizas.Dominio.Models;
 
 import jakarta.persistence.*;
 

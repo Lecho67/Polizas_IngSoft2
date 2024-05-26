@@ -1,8 +1,8 @@
 package com.Polizas.Polizas.Infraestructura.Input.Rest;
 
-import com.Polizas.Polizas.Dominio.Transaccion;
-import com.Polizas.Polizas.Aplicación.Services.CurrencyExchangeService;
-import com.Polizas.Polizas.Aplicación.Services.RedisService;
+import com.Polizas.Polizas.Dominio.Models.Transaccion;
+import com.Polizas.Polizas.Infraestructura.Services.CurrencyExchangeService;
+import com.Polizas.Polizas.Infraestructura.Services.RedisService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

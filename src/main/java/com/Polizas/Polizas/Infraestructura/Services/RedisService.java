@@ -1,6 +1,6 @@
-package com.Polizas.Polizas.Aplicación.Services;
+package com.Polizas.Polizas.Infraestructura.Services;
 
-import com.Polizas.Polizas.Dominio.Transaccion;
+import com.Polizas.Polizas.Dominio.Models.Transaccion;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Service;
